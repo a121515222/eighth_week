@@ -845,7 +845,7 @@ $btn-active-border-tint-amount:   10% !default;
 // Forms
 
 // scss-docs-start form-text-variables
-$form-text-margin-top:                  .25rem !default;
+$form-text-margin-top:                  0 !default;//.25rem !default;
 $form-text-font-size:                   $small-font-size !default;
 $form-text-font-style:                  null !default;
 $form-text-font-weight:                 null !default;
