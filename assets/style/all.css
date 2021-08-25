@@ -3548,7 +3548,7 @@ progress {
 }
 
 .form-text {
-  margin-top: 0.25rem;
+  margin-top: 0;
   font-size: 0.875em;
   color: #6c757d;
 }
@@ -4304,7 +4304,7 @@ textarea.form-control-lg {
 .valid-feedback {
   display: none;
   width: 100%;
-  margin-top: 0.25rem;
+  margin-top: 0;
   font-size: 0.875em;
   color: #198754;
 }
@@ -4403,7 +4403,7 @@ textarea.form-control-lg {
 .invalid-feedback {
   display: none;
   width: 100%;
-  margin-top: 0.25rem;
+  margin-top: 0;
   font-size: 0.875em;
   color: #dc3545;
 }
@@ -26607,7 +26607,6 @@ a {
 }
 
 .swiper-slide {
-  text-align: center;
   font-size: 18px;
   background: #fff;
   /* Center slide text vertically */
@@ -26627,6 +26626,26 @@ a {
 .swiper-slide img {
   width: 100%;
   height: 445px;
+}
+
+.swiper--button-static {
+  position: static;
+}
+
+.swiper-slide-width-change {
+  width: 95% !important;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide-width-change {
+    width: 48% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper-slide-width-change {
+    width: 31.6% !important;
+  }
 }
 
 .card-img-border-direction {

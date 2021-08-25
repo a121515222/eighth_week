@@ -2513,7 +2513,7 @@ progress {
   font-size: 0.875rem; }
 
 .form-text {
-  margin-top: 0.25rem;
+  margin-top: 0;
   font-size: 0.875em;
   color: #6c757d; }
 
@@ -2957,7 +2957,7 @@ textarea.form-control-lg {
 .valid-feedback {
   display: none;
   width: 100%;
-  margin-top: 0.25rem;
+  margin-top: 0;
   font-size: 0.875em;
   color: #198754; }
 
@@ -3030,7 +3030,7 @@ textarea.form-control-lg {
 .invalid-feedback {
   display: none;
   width: 100%;
-  margin-top: 0.25rem;
+  margin-top: 0;
   font-size: 0.875em;
   color: #dc3545; }
 
