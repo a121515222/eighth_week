@@ -130,15 +130,16 @@ current: index
 <!--精心設計、課程多元-->
 <div class="bg-primary">
   <div class="container-lg">
-    <div class="row my-18 py-md-21 py-lg-22">
-      <div class="d-flex flex-column justify-content-center col-12 col-md-6 offset-lg-1 col-lg-5">
+    <div class="row my-18 py-md-21 py-lg-22 position-relative">
+      <div class="position-absolute d-none d-lg-block h-100 bg-primary w-20 top-50 start-0 translate-middle "style="z-index: 1;"></div>
+      <div class="d-flex flex-column justify-content-center col-12 col-md-6 offset-lg-1 col-lg-5 bg-primary" style="z-index: 1;">
         <h2 class="fw-medium text-fourth mb-2">精心設計、課程多元</h2>
         <p class="text-secondary mb-lg-10 fs-4">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</p>
         <a href="#" class="text-fourth hoversytle d-inline-block">課程介紹<i class="fas fa-arrow-right ms-4"></i></a>
       </div>
-      <div class="d-none d-lg-block col-md-6 ">
-          <div class="swiper-container mySwiper">
-            <div class="swiper-wrapper">
+      <div class="d-none d-lg-block col-md-6 bg-primary" style="z-index: 0;">
+          <div class="swiper-container mySwiper  ">
+            <div class="swiper-wrapper ">
               <div class="swiper-slide">
                 <div class="card course border-0"style="background: url(./assets/images/class-1-1.jpg);background-size: cover;"> 
                 </div>
@@ -157,7 +158,6 @@ current: index
               </div>
             </div>
           </div>
-        
       </div>
       <div class="col-12 col-md-6 d-lg-none">
         <ul class="row list-unstyled ">
