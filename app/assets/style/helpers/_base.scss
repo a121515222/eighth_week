@@ -2,6 +2,7 @@
     box-sizing: border-box;
   }
 img{
+    display: block;
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -20,4 +21,13 @@ a{
     opacity: 0.6;
   }
 }
+.bnt-rounded{
+  border-radius: 16px;
+}
+.hoversytle-btn{
+  &:hover,&:focus{
+    color: $white !important;
+    background: $secondary;
 
+  }
+}
