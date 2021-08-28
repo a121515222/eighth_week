@@ -8258,7 +8258,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 690px;
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
@@ -8272,14 +8272,14 @@ fieldset:disabled .btn {
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
   .modal-sm {
-    max-width: 300px;
+    max-width: 345px;
   }
 }
 
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {
-    max-width: 800px;
+    max-width: 920px;
   }
 }
 
@@ -26571,20 +26571,60 @@ a {
   background: #C0A4A5;
 }
 
-.background-set {
-  background: url(../images/banner.jpeg);
-  background-size: cover;
-  background-position: top 60% right 65%;
-  background-repeat: no-repeat;
-  height: 560px;
+.primary {
+  color: #907A7B;
 }
 
-@media (min-width: 768px) {
-  .background-md-set {
-    height: 582px;
-    background-size: cover;
-    background-position: bottom 0 right 50%;
-  }
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background-color: #907A7B;
+}
+
+.datepicker-picker {
+  color: #907A7B;
+}
+
+.datepicker-input-width {
+  width: 125px;
+  border: 1px solid #C0A4A5;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #F5F0E7;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 445px;
+}
+
+.input-style {
+  border: 1px solid #C0A4A5;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.gender-selection-width {
+  width: 65px;
 }
 
 .card-h-set {
@@ -26685,32 +26725,6 @@ a {
   }
 }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  font-size: 18px;
-  background: #F5F0E7;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 16px;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 445px;
-}
-
 .card-commen-gap {
   margin: 4px 15px;
 }
@@ -26742,6 +26756,22 @@ a {
     width: auto;
     border-top-right-radius: calc(1rem - 1px);
     border-bottom-left-radius: 0;
+  }
+}
+
+.background-set {
+  background: url(../images/banner.jpeg);
+  background-size: cover;
+  background-position: top 60% right 65%;
+  background-repeat: no-repeat;
+  height: 560px;
+}
+
+@media (min-width: 768px) {
+  .background-md-set {
+    height: 582px;
+    background-size: cover;
+    background-position: bottom 0 right 50%;
   }
 }
 
@@ -26794,32 +26824,6 @@ a {
 
 .display {
   display: block;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  font-size: 18px;
-  background: #F5F0E7;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 16px;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 445px;
 }
 
 /*# sourceMappingURL=all.css.map */

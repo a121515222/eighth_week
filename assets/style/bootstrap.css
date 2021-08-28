@@ -5534,7 +5534,7 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 690px;
     margin: 1.75rem auto; }
   .modal-dialog-scrollable {
     height: calc(100% - 3.5rem); }
@@ -5543,12 +5543,12 @@ textarea.form-control-lg {
   .modal-content {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
   .modal-sm {
-    max-width: 300px; } }
+    max-width: 345px; } }
 
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {
-    max-width: 800px; } }
+    max-width: 920px; } }
 
 @media (min-width: 1200px) {
   .modal-xl {
