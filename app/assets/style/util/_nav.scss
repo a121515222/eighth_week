@@ -1,0 +1,11 @@
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            &:hover,&:focus{
+                color:$secondary ;
+                font-weight: bold !important;
+                
+            }
+        }
+    }
+}

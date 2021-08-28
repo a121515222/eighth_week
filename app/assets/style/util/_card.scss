@@ -1,128 +1,186 @@
 //設定index card 高度 <!--感受身心，活在當下-->
-.card-h-set{
+.card-h-set {
+  height: 420px;
+}
+@include media-breakpoint-up(md) {
+  card-h-set {
+    height: 252px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .card-h-set {
     height: 420px;
   }
-  @include media-breakpoint-up(md) {
-    card-h-set{
-      height: 252px;
-    }
-  }
-  @include media-breakpoint-up(lg) {
-    .card-h-set{
-      height: 420px;
-    }
-  }
-  
-  //card-img height and breakpoint <!--頂尖師資、專業教學-->
-  .card-img-first{
-    width: 48px;
-    height: 48px;
-    margin-left: 16px;
-  }
-  .card-img{
-    width: 48px;
-    height: 48px;
-    margin-left: 16px;
-  }
-  @include media-breakpoint-up(md) {
-    .card-img-first{
+}
+
+//card-img height and breakpoint <!--頂尖師資、專業教學-->
+.card-img-first {
+  width: 48px;
+  height: 48px;
+  margin-left: 16px;
+}
+.card-img {
+  width: 48px;
+  height: 48px;
+  margin-left: 16px;
+}
+@include media-breakpoint-up(md) {
+  .card-img-first {
     width: 94px;
     height: 94px;
     margin-left: 48px;
-    }
-    .card-img{
+  }
+  .card-img {
     width: 68px;
     height: 68px;
     margin-left: 32px;
-    }
-    .mxs-30{
-    margin-left:-30px;
-    }
   }
-  @include media-breakpoint-up(lg) {
-    .mxs-95{
-      margin-left: -95px;
-    }
-    .mxs-30{
-      margin-left: 0px;
-    }
+  .mxs-30 {
+    margin-left: -30px;
   }
-  //relax card height <!--舒適空間、靜心放鬆-->
-  .relax-card-first{
-    height: 210px;
+}
+@include media-breakpoint-up(lg) {
+  .mxs-95 {
+    margin-left: -95px;
   }
-  .relax-card{
-    height: 210px;
+  .mxs-30 {
+    margin-left: 0px;
   }
-  @include media-breakpoint-up(md) {
-    .relax-card-first{
-      height: 266x;
-    }
-    .relax-card{
-      height: 117px;
-    }
+}
+//relax card height <!--舒適空間、靜心放鬆-->
+.relax-card-first {
+  height: 210px;
+}
+.relax-card {
+  height: 210px;
+}
+@include media-breakpoint-up(md) {
+  .relax-card-first {
+    height: 266x;
   }
-  @include media-breakpoint-up(lg) {
-    .relax-card-first{
-      height: 444px;
-    }
-    .relax-card{
-      height: 207px;
-    }
+  .relax-card {
+    height: 117px;
   }
-  
-  
-  //course card height <!--精心設計、課程多元-->
-  .course{
-    width: 165px;
-    height: 165px;
+}
+@include media-breakpoint-up(lg) {
+  .relax-card-first {
+    height: 444px;
   }
-  @include media-breakpoint-up(md) {
-    .course{
-      width: 150px;
-      height: 150px;
-    }
+  .relax-card {
+    height: 207px;
   }
-  @include media-breakpoint-up(lg) {
-    .course{
-      width: 455px;
-      height: 455px;
-    }
+}
+
+//course card height <!--精心設計、課程多元-->
+.course {
+  width: 165px;
+  height: 165px;
+}
+@include media-breakpoint-up(md) {
+  .course {
+    width: 150px;
+    height: 150px;
   }
-  
-  
-  //comment card gap with Breakpoints   <!--聽聽他們怎麼說-->
-  .card-commen-gap{
-    margin:4px 15px;
+}
+@include media-breakpoint-up(lg) {
+  .course {
+    width: 455px;
+    height: 455px;
   }
-  @include media-breakpoint-up(md){
-    .card-comment-gap{
-      margin:8px 15px;
-    }
+}
+
+//comment card gap with Breakpoints   <!--聽聽他們怎麼說-->
+.card-commen-gap {
+  margin: 4px 15px;
+}
+@include media-breakpoint-up(md) {
+  .card-comment-gap {
+    margin: 8px 15px;
   }
-  
-  //card img border-radius and height change  with Breakpoints <!--方案選擇-->
-  .card-img-border-direction{
+}
+
+//card img border-radius and height change  with Breakpoints <!--方案選擇-->
+.card-img-border-direction {
+  height: 243px;
+  border-top-left-radius: calc(1rem - 1px);
+  border-top-right-radius: calc(1rem - 1px);
+}
+@include media-breakpoint-up(md) {
+  .card-img-border-direction {
     height: 243px;
-    border-top-left-radius: calc(1rem - 1px);
+    width: 50%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: calc(1rem - 1px);
+  }
+}
+@include media-breakpoint-up(lg) {
+  .card-img-border-direction {
+    height: 243px;
+    width: auto;
     border-top-right-radius: calc(1rem - 1px);
+    border-bottom-left-radius: 0;
+  }
+}
+//course Description
+
+.demonstration-card {
+  position: relative;
+  img {
+    border-radius: 16px;
+    height: 196px;
+  }
+  &:before {
+    position: absolute;
+    content: "60min";
+    background: $secondary;
+    border-radius: 16px;
+    padding: 4px 16px;
+    color: $white;
+    font-size: 14px;
+    top: -13px;
+    left: 30px;
+    font-weight: light;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .w-lg-100 {
+    width: 100%;
+  }
+  .grid-lg-5-4 {
+    display: grid;
+    grid-template:repeat(10, 1fr),repeat(13, 1fr);//grid-template-rows: repeat(5, auto);  +grid-template-columns: repeat(9, auto); 
+    grid-row-gap: 30px;
+  }
+  .item1 {
+    grid-column: 1/9;// grid-column-start: 1; + grid-column-end: 6;
+  }
+  .item2 {
+    grid-column: 9/13;
+  }
+  .item3 {
+    grid-column: 1/5;
+    grid-row: 2/3; // grid-row-start: 2; + grid-row-end: 3;
+  }
+  .item4 {
+    grid-column: 5/13;
+    grid-row: 2/3;
+  }
+  .item5 {
+    grid-column: 1/9;
+    grid-row: 3/4; 
     
   }
-  @include media-breakpoint-up(md) {
-    .card-img-border-direction{
-      height: 243px;
-      width: 50%;
-      border-top-right-radius: 0;
-      border-bottom-left-radius: calc(1rem - 1px);
-    }
-   
+  .item6 {
+    grid-column: 9/13;
+    grid-row: 3/4;
   }
-  @include media-breakpoint-up(lg) {
-    .card-img-border-direction{
-      height: 243px;
-      width: auto;
-      border-top-right-radius: calc(1rem - 1px);
-      border-bottom-left-radius:0
-    }
+  .item7 {
+    grid-column: 1/5;
+    grid-row: 4/5; 
     
   }
+  .item8 {
+    grid-column: 5/13;
+    grid-row: 4/5;
+  }
+}
