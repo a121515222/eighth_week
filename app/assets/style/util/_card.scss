@@ -1,0 +1,128 @@
+//設定index card 高度 <!--感受身心，活在當下-->
+.card-h-set{
+    height: 420px;
+  }
+  @include media-breakpoint-up(md) {
+    card-h-set{
+      height: 252px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .card-h-set{
+      height: 420px;
+    }
+  }
+  
+  //card-img height and breakpoint <!--頂尖師資、專業教學-->
+  .card-img-first{
+    width: 48px;
+    height: 48px;
+    margin-left: 16px;
+  }
+  .card-img{
+    width: 48px;
+    height: 48px;
+    margin-left: 16px;
+  }
+  @include media-breakpoint-up(md) {
+    .card-img-first{
+    width: 94px;
+    height: 94px;
+    margin-left: 48px;
+    }
+    .card-img{
+    width: 68px;
+    height: 68px;
+    margin-left: 32px;
+    }
+    .mxs-30{
+    margin-left:-30px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .mxs-95{
+      margin-left: -95px;
+    }
+    .mxs-30{
+      margin-left: 0px;
+    }
+  }
+  //relax card height <!--舒適空間、靜心放鬆-->
+  .relax-card-first{
+    height: 210px;
+  }
+  .relax-card{
+    height: 210px;
+  }
+  @include media-breakpoint-up(md) {
+    .relax-card-first{
+      height: 266x;
+    }
+    .relax-card{
+      height: 117px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .relax-card-first{
+      height: 444px;
+    }
+    .relax-card{
+      height: 207px;
+    }
+  }
+  
+  
+  //course card height <!--精心設計、課程多元-->
+  .course{
+    width: 165px;
+    height: 165px;
+  }
+  @include media-breakpoint-up(md) {
+    .course{
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .course{
+      width: 455px;
+      height: 455px;
+    }
+  }
+  
+  
+  //comment card gap with Breakpoints   <!--聽聽他們怎麼說-->
+  .card-commen-gap{
+    margin:4px 15px;
+  }
+  @include media-breakpoint-up(md){
+    .card-comment-gap{
+      margin:8px 15px;
+    }
+  }
+  
+  //card img border-radius and height change  with Breakpoints <!--方案選擇-->
+  .card-img-border-direction{
+    height: 243px;
+    border-top-left-radius: calc(1rem - 1px);
+    border-top-right-radius: calc(1rem - 1px);
+    
+  }
+  @include media-breakpoint-up(md) {
+    .card-img-border-direction{
+      height: 243px;
+      width: 50%;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: calc(1rem - 1px);
+    }
+   
+  }
+  @include media-breakpoint-up(lg) {
+    .card-img-border-direction{
+      height: 243px;
+      width: auto;
+      border-top-right-radius: calc(1rem - 1px);
+      border-bottom-left-radius:0
+    }
+    
+  }

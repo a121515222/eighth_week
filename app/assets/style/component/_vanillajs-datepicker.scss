@@ -1,0 +1,16 @@
+.primary {
+    color: $third;
+}
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+    background-color: $third;
+}
+.datepicker-picker {
+    color: $third;
+}
+.datepicker-input-width{
+    width: 125px;
+    border: 1px solid $secondary;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
