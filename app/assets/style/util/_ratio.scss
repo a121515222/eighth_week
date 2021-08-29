@@ -1,0 +1,10 @@
+//course Description picture ratio
+.ratio-course{
+    --bs-aspect-ratio: 61.3%;
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 103.3%;
+    }
+    @include media-breakpoint-up(lg){
+        --bs-aspect-ratio: 61.3%;
+    }
+}

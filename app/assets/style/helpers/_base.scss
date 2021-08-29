@@ -8,6 +8,7 @@ img{
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 16px;
   } 
 
 body{
@@ -18,7 +19,6 @@ a{
   text-decoration: none;
   display: block;
 }
-
 //待分類
 
 .hoversytle{
@@ -26,7 +26,7 @@ a{
     opacity: 0.6;
   }
 }
-
+//btn
 .bnt-rounded{
   border-radius: 16px;
 }
@@ -35,6 +35,5 @@ a{
   &:hover,&:focus{
     color: $white !important;
     background: $secondary;
-
   }
 }

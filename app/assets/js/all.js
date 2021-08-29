@@ -94,6 +94,35 @@ const swiper = new Swiper(".courseLevelSwiper", {
   }
 });
 }
+//CourseDescription-teacher
+const swiperCourseDecription = document.querySelector('.swiperCourseDecription');
+  if (swiperCourseDecription) {
+const swiper = new Swiper(".swiperCourseDecription", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  grid: {
+    rows: 4,
+    fill: 'row',
+  },
+  loopFillGroupWithBlank: false,
+  spaceBetween: 70,
+  loop: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+  grid: {
+    rows: 1,
+    fill: 'row',
+  },  
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  }
+});
+}
 });
 
 
