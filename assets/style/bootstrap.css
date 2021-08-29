@@ -6508,6 +6508,9 @@ textarea.form-control-lg {
 .top-24px {
   top: 24px !important; }
 
+.top-48px {
+  top: 48px !important; }
+
 .bottom-0 {
   bottom: 0 !important; }
 
@@ -6525,6 +6528,9 @@ textarea.form-control-lg {
 
 .bottom-24px {
   bottom: 24px !important; }
+
+.bottom-48px {
+  bottom: 48px !important; }
 
 .start-0 {
   left: 0 !important; }
@@ -6544,6 +6550,9 @@ textarea.form-control-lg {
 .start-24px {
   left: 24px !important; }
 
+.start-48px {
+  left: 48px !important; }
+
 .end-0 {
   right: 0 !important; }
 
@@ -6561,6 +6570,9 @@ textarea.form-control-lg {
 
 .end-24px {
   right: 24px !important; }
+
+.end-48px {
+  right: 48px !important; }
 
 .translate-middle {
   transform: translate(-50%, -50%) !important; }
