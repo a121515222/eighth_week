@@ -1,8 +1,7 @@
 "use strict";
 
 $(function () {
-  console.log('Hello Bootstrap5'); //swiper index page
-
+  //swiper index page
   var mySwiper = document.querySelector('.mySwiper');
 
   if (mySwiper) {
@@ -176,22 +175,15 @@ $('.first-experience').click(function (e) {
     $('.card-short-experience').toggleClass('none');
     $('.card-long-experience').toggleClass('none');
   }
-}); //vanillajs-datepicker
-
-var elem = document.querySelector('input[name="datepicker"]');
-var datepicker = new Datepicker(elem, {
-  nextArrow: '>',
-  prevArrow: '<',
-  buttonClass: 'btn primary'
 });
-var show = document.querySelector('.chooseCourse');
-var basic = document.querySelector('#chooseCourse-base');
-var intermediate = document.querySelector('#chooseCourse-intermediate');
-var advanced = document.querySelector('#chooseCourse-advanced');
+var show = document.querySelector('.showChooseCourse');
+var basic = document.querySelector('.chooseCourse-base');
+var intermediate = document.querySelector('.chooseCourse-intermediate');
+var advanced = document.querySelector('.chooseCourse-advanced');
 var courseLevel = document.querySelector('.courseLevel'); //getAttribute
 //remove the hide class
 
-function display(e) {
+function present(e) {
   e.preventDefault();
   show.classList.remove('hide');
   show.classList.add('display');
@@ -209,10 +201,20 @@ function wadvanced() {
   courseLevel.innerHTML = "進階";
 }
 
-basic.addEventListener('click', display, false);
+basic.addEventListener('click', present, false);
 basic.addEventListener('click', wbasic, false);
-intermediate.addEventListener('click', display, false);
+intermediate.addEventListener('click', present, false);
 intermediate.addEventListener('click', wintermediate, false);
-advanced.addEventListener('click', display, false);
-advanced.addEventListener('click', wadvanced, false);
+advanced.addEventListener('click', present, false);
+advanced.addEventListener('click', wadvanced, false); //vanillajs-datepicker
+
+var elem = document.querySelector('input[name="datepicker"]');
+var datepicker = new Datepicker(elem, {
+  nextArrow: '>',
+  prevArrow: '<',
+  buttonClass: 'btn datepicker-primary',
+  autohide: true,
+  clearBtn: true // format: 'mm/dd/yyyy',
+
+});
 //# sourceMappingURL=all.js.map

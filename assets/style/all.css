@@ -27060,9 +27060,16 @@ a {
   background: #F5F0E7;
 }
 
-.hoversytle-btn:hover, .hoversytle-btn:focus {
+.hoversytle-btn-secondary:hover, .hoversytle-btn-secondary:focus {
   color: #fff !important;
   background: #C0A4A5;
+  border: 1px solid #C0A4A5;
+}
+
+.hoversytle-btn-primary:hover, .hoversytle-btn-primary:focus {
+  color: #707070 !important;
+  background: #F5F0E7;
+  border: 1px solid #F5F0E7;
 }
 
 .background-set {

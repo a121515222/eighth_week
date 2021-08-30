@@ -12,46 +12,57 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/bootstrap.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
   <!--字體-->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary position-relative">
-    <div class="container-lg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+    <div class="container-fluid">
       <a class="navbar-brand" href="./index.html"><img src="./assets/images/DOYOGA-logo.png" alt="DOYOGA-logo"
           style="height: 30px;"></a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-align-justify fs-1"></i>
       </button>
-      <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute  top-50 start-50 translate-middle">
-          <li class="nav-item">
-            <a class="fw-light nav-link fs-5" aria-current="page" href="./CourseDescription.html">
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0  mx-lg-auto align-items-end ">
+          <li class="nav-item ">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./CourseDescription.html">
               課程介紹
             </a>
           </li>
           <li class="nav-item">
-            <a class="fw-light nav-link fs-5" aria-current="page" href="./surround.html">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./surround.html">
               瑜珈空間
             </a>
           </li>
           <li class="nav-item">
-            <a class="fw-light nav-link fs-5" aria-current="page" href="./courseTime.html">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./courseTime.html">
               當月課表
             </a>
           </li>
+          <li class="nav-item d-lg-none">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./Reservation-1.html">
+              立刻預約
+            </a>
+          </li>
+          <li class="nav-item d-lg-none ">
+            <a class="fw-light nav-link fs-5 active"  aria-current="page" href="./ContactUS.html">
+              聯絡我們
+            </a>
+          </li>
         </ul>
-        <a class="btn btn-primary border rounded-pill me-7  text-fourth hoversytle" href="Reservation-1.html"
-          role="button">立即預約</a>
-        <a class="btn btn-primary border rounded-pill  text-fourth hoversytle" href="ContactUS.html" role="button">聯絡我們</a>
+      </div>
+      <div class="d-flex gap-7 d-none d-lg-block">
+        <a class="btn btn-primary border rounded-pill  text-fourth hoversytle-btn-secondary" href="./Reservation-1.html"
+        role="button">立即預約</a>
+      <a class="btn btn-primary border rounded-pill  text-fourth hoversytle-btn-secondary" href="./ContactUS.html" role="button">聯絡我們</a>
       </div>
     </div>
   </nav>
+  
   <!--Fixed right side social media linker-->
   <ul class="position-fixed top-50 end-0 d-none d-lg-block list-unstyled d-lg-flex flex-column gap-3"
     style="z-index: 9999;">
@@ -202,7 +213,7 @@
 
     <!--footer-->
     <div class="bg-third">
-      <div class="container-lg">
+      <div class="container">
         <div class="row">
           <!--subscript-->
           <div class="col-12 mb-3 col-lg-5 mt-10 mt-md-14">
@@ -211,13 +222,13 @@
           <div class="col-12 col-md-6 offset-lg-3 col-lg-4 mt-lg-14">
             <div class="input-group">
               <input class="form-control" type="emali" placeholder="請輸入您的電子信箱">
-              <button class="btn btn-secondary fs-4 text-white" type="submit">訂閱</button>
+              <button class="btn btn-secondary fs-4 text-white hoversytle-btn-primary" type="submit">訂閱</button>
             </div>
           </div>
         </div>
       </div>
       <hr class="text-white">
-      <div class="container-lg">
+      <div class="container">
         <!--Social network linker-->
         <div class="row">
           <div class="col-12 mb-3">
@@ -249,7 +260,7 @@
       </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>

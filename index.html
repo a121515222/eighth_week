@@ -12,46 +12,57 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/bootstrap.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
   <!--字體-->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary position-relative">
-    <div class="container-lg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+    <div class="container-fluid">
       <a class="navbar-brand" href="./index.html"><img src="./assets/images/DOYOGA-logo.png" alt="DOYOGA-logo"
           style="height: 30px;"></a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-align-justify fs-1"></i>
       </button>
-      <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute  top-50 start-50 translate-middle">
-          <li class="nav-item">
-            <a class="fw-light nav-link fs-5" aria-current="page" href="./CourseDescription.html">
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0  mx-lg-auto align-items-end ">
+          <li class="nav-item ">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./CourseDescription.html">
               課程介紹
             </a>
           </li>
           <li class="nav-item">
-            <a class="fw-light nav-link fs-5" aria-current="page" href="./surround.html">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./surround.html">
               瑜珈空間
             </a>
           </li>
           <li class="nav-item">
-            <a class="fw-light nav-link fs-5" aria-current="page" href="./courseTime.html">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./courseTime.html">
               當月課表
             </a>
           </li>
+          <li class="nav-item d-lg-none">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./Reservation-1.html">
+              立刻預約
+            </a>
+          </li>
+          <li class="nav-item d-lg-none ">
+            <a class="fw-light nav-link fs-5 active"  aria-current="page" href="./ContactUS.html">
+              聯絡我們
+            </a>
+          </li>
         </ul>
-        <a class="btn btn-primary border rounded-pill me-7  text-fourth hoversytle" href="Reservation-1.html"
-          role="button">立即預約</a>
-        <a class="btn btn-primary border rounded-pill  text-fourth hoversytle" href="ContactUS.html" role="button">聯絡我們</a>
+      </div>
+      <div class="d-flex gap-7 d-none d-lg-block">
+        <a class="btn btn-primary border rounded-pill  text-fourth hoversytle-btn-secondary" href="./Reservation-1.html"
+        role="button">立即預約</a>
+      <a class="btn btn-primary border rounded-pill  text-fourth hoversytle-btn-secondary" href="./ContactUS.html" role="button">聯絡我們</a>
       </div>
     </div>
   </nav>
+  
   <!--Fixed right side social media linker-->
   <ul class="position-fixed top-50 end-0 d-none d-lg-block list-unstyled d-lg-flex flex-column gap-3"
     style="z-index: 9999;">
@@ -61,7 +72,7 @@
   </ul>
   <!--banner-->
 <div class="banner background-set background-md-set d-flex align-items-center">
-<div class="container-lg" >
+<div class="container" >
   <div class="row">
     <div class="col-12 offset-lg-1 col-lg-11">
       <span class="text-fourth fs-5">健身輕時尚</span>
@@ -73,8 +84,8 @@
       <span class="fs-4 fs-d-3  text-fourth ">多給自己一點時間享受靜謐，傾聽內心<br class="d-inline d-md-none">的<br class="d-none d-md-inline">聲音。</span>
     </div>
     <div class="col-9 col-md-4 offset-lg-1 col-lg-3">
-      <a class="btn btn-primary fs-4  text-fourth hoversytle" href="Reservation-1.html" role="button">立即預約</a>
-      <a class="btn btn-secondary fs-4  ms-3 text-white" href="#" role="button">課程介紹</a>
+      <a class="btn btn-primary fs-4  text-fourth hoversytle-btn-secondary" href="Reservation-1.html" role="button">立即預約</a>
+      <a class="btn btn-secondary fs-4  ms-3 text-white hoversytle-btn-primary" href="#" role="button">課程介紹</a>
     </div>
   </div>
 </div>
@@ -163,7 +174,7 @@
 </div>
 </div>
 <!--舒適空間、靜心放鬆-->
-<div class="container-lg">
+<div class="container">
   <div class="row my-18 my-md-21 my-lg-22">
     <div class="d-flex flex-column justify-content-center col-12 order-0 col-md-6 order-md-2 col-lg-5">
       <h2 class="fw-medium text-fourth mb-2">舒適空間、靜心放鬆</h2>
@@ -187,7 +198,7 @@
 </div>
 <!--精心設計、課程多元-->
 <div class="bg-primary">
-  <div class="container-lg">
+  <div class="container">
     <div class="row my-18 py-md-21 py-lg-22">
       <div class="d-flex flex-column justify-content-center col-12 col-md-6 offset-lg-1 col-lg-5 bg-primary">
         <h2 class="fw-medium text-fourth mb-2">精心設計、課程多元</h2>
@@ -243,7 +254,7 @@
   </div>
 </div>
 <!--方案選擇-->
-<div class="container-lg">
+<div class="container">
   <ul class="row list-unstyled my-14 mt-md-15 my-15">
     <h2 class="fw-medium text-third mb-2 text-center">方案選擇</h2>
     <p class="text-secondary mb-lg-10 fs-4 text-center">DOYOGA 可以帶給你...</p>
@@ -254,7 +265,7 @@
         <h4 class="card-title text-third">首次體驗</h4>
         <span class="fs-4 text-secondary">NT $450 / 次</span>
         <p class="card-text text-third">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-        <a href="#" class="btn btn-secondary text-white hoversytle fs-4 w-100">選擇課程</a>
+        <a href="#" class="btn btn-secondary text-white hoversytle-btn-primary fs-4 w-100">選擇課程</a>
       </div>
     </div>
   </li>
@@ -265,7 +276,7 @@
           <h4 class="card-title text-third">短期體驗</h4>
           <span class="fs-4 text-secondary">NT $1800 / 月</span>
           <p class="card-text text-third">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
-          <a href="#" class="btn btn-secondary text-white hoversytle fs-4 w-100">選擇課程 </a>
+          <a href="#" class="btn btn-secondary text-white hoversytle-btn-primary fs-4 w-100">選擇課程 </a>
         </div>
       </div>
     </li>
@@ -276,7 +287,7 @@
           <h4 class="card-title text-third">長期體驗</h4>
           <span class="fs-4 text-secondary">NT $5600 / 季</span>
           <p class="card-text text-third">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
-          <a href="#" class="btn btn-secondary text-white hoversytle fs-4 w-100">選擇課程</a>
+          <a href="#" class="btn btn-secondary text-white hoversytle-btn-primary fs-4 w-100">選擇課程</a>
         </div>
       </div>
     </li>
@@ -284,7 +295,7 @@
 </div>
 <!--聽聽他們怎麼說-->
 <div class="bg-primary">
-<div class="container-lg">
+<div class="container">
   <h2 class="fw-medium text-third text-center mb-2 pt-14 pt-md-15 ">聽聽他們怎麼說</h2>
   <div class="swiper commentSwiper bg-primary pt-7 pb-21 pb-md-18">
     <ul class="swiper-wrapper list-unstyled">
@@ -376,7 +387,7 @@
 
     <!--footer-->
     <div class="bg-third">
-      <div class="container-lg">
+      <div class="container">
         <div class="row">
           <!--subscript-->
           <div class="col-12 mb-3 col-lg-5 mt-10 mt-md-14">
@@ -385,13 +396,13 @@
           <div class="col-12 col-md-6 offset-lg-3 col-lg-4 mt-lg-14">
             <div class="input-group">
               <input class="form-control" type="emali" placeholder="請輸入您的電子信箱">
-              <button class="btn btn-secondary fs-4 text-white" type="submit">訂閱</button>
+              <button class="btn btn-secondary fs-4 text-white hoversytle-btn-primary" type="submit">訂閱</button>
             </div>
           </div>
         </div>
       </div>
       <hr class="text-white">
-      <div class="container-lg">
+      <div class="container">
         <!--Social network linker-->
         <div class="row">
           <div class="col-12 mb-3">
@@ -423,7 +434,7 @@
       </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>
