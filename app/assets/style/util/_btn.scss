@@ -1,6 +1,14 @@
-.hoversytle-btn{
+.hoversytle-btn-secondary{
     &:hover,&:focus{
       color: $white !important;
       background: $secondary;
+      border: 1px solid $secondary;
+    }
+  }
+  .hoversytle-btn-primary{
+    &:hover,&:focus{
+      color: $fourth !important;
+      background: $primary;
+      border: 1px solid $primary;
     }
   }

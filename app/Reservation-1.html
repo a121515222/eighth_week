@@ -5,7 +5,7 @@ engine: ejs
 current: Reservation-1
 ---
 <!--立即預約-->
-<div class="container-lg">
+<div class="container">
     <div class="row justify-content-center mb-3 mb-md-0">
         <div class="col-4  d-flex justify-content-center col-lg-2 ">
             <h1 class="fs-2 text-third mt-18 mt-md-22">立即預約</h1>
@@ -14,18 +14,18 @@ current: Reservation-1
     
     <ul class="nav d-flex justify-content-center list-unstyled my-7 ">
       <li class="nav-link  me-md-0  d-flex justify-content-center"><a href="./Reservation-1.html"
-              class="btn btn-primary border-rounded text-third hoversytle-btn px-9 px-md-5 px-lg-18"
+              class="btn btn-primary border-rounded text-third hoversytle-btn-secondary px-9 px-md-5 px-lg-18"
               role="button">選擇方案</a></li>
       <li class="nav-link  me-md-0 d-flex justify-content-center"><a href="./Reservation-2.html"
-              class="btn btn-primary border-rounded text-third hoversytle-btn px-9 px-md-5 px-lg-18"
+              class="btn btn-primary border-rounded text-third hoversytle-btn-secondary px-9 px-md-5 px-lg-18"
               role="button">填寫資料</a></li>
       <li class="nav-link  me-md-0  d-flex justify-content-center"><a href="./Reservation-3.html"
-              class="btn btn-primary border-rounded text-third hoversytle-btn px-9 px-md-5 px-lg-18"
+              class="btn btn-primary border-rounded text-third hoversytle-btn-secondary px-9 px-md-5 px-lg-18"
               role="button">完成預約</a></li>
   </ul>
 </div>
 <!--方案選擇-->
-<div class="container-lg">
+<div class="container">
     <ul class="row list-unstyled my-7 ">
       <li class="col-12 mb-7 mb-md-10 mb-lg-0 col-lg-4">
         <div class="card d-flex flex-column flex-md-row flex-lg-column card-first-experience">
@@ -34,7 +34,7 @@ current: Reservation-1
           <h4 class="card-title text-third">首次體驗</h4>
           <span class="fs-4 text-secondary">NT $450 / 次</span>
           <p class="card-text text-third">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-          <a href="#chooseCourse" class="btn btn-secondary text-white hoversytle fs-4 w-100 first-experience" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="chooseCourse">選擇課程</a>
+          <a href="#chooseCourse" class="btn btn-secondary text-white hoversytle-btn-primary fs-4 w-100 first-experience" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="chooseCourse">選擇課程</a>
         </div>
       </div>
     </li>
@@ -45,7 +45,7 @@ current: Reservation-1
             <h4 class="card-title text-third">短期體驗</h4>
             <span class="fs-4 text-secondary">NT $1800 / 月</span>
             <p class="card-text text-third">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
-            <a href="#" class="btn btn-secondary text-white hoversytle fs-4 w-100">選擇課程</a>
+            <a href="#" class="btn btn-secondary text-white hoversytle-btn-primary fs-4 w-100">選擇課程</a>
           </div>
         </div>
       </li>
@@ -56,14 +56,14 @@ current: Reservation-1
             <h4 class="card-title text-third">長期體驗</h4>
             <span class="fs-4 text-secondary">NT $5600 / 季</span>
             <p class="card-text text-third">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
-            <a href="#" class="btn btn-secondary text-white hoversytle fs-4 w-100">選擇課程</a>
+            <a href="#" class="btn btn-secondary text-white hoversytle-btn-primary fs-4 w-100">選擇課程</a>
           </div>
         </div>
       </li>
     </ul>
   </div>
 <div class="collapse" id="chooseCourse">
-  <div class="container-lg">
+  <div class="container">
     <div class="row mb-7">
       <div class="col-12 d-flex justify-content-center align-items-center offset-lg-1 col-lg-2">
         <i class="fs-1 text-center text-third fas fa-caret-down"></i>
@@ -77,11 +77,10 @@ current: Reservation-1
                   <h1 class="fs-2 text-white mt-18 mb-10 mt-md-22 mb-md-14">選擇課程階級</h1>
               </div>
               <!--課程難度選擇swiper-->
-              
                 <div class="swiper courseLevelSwiper ">
                   <ul class="swiper-wrapper list-unstyled bg-third " >
                     <li class="swiper-slide bg-third" >
-                      <a href="#"class="card card-btn shadow bg-secondary text-white w-100"  id="chooseCourse-base">
+                      <a href="#"class="card card-btn shadow bg-secondary text-white w-100 chooseCourse-base"   id="chooseCourse-base">
                       <div class="card-body">
                           <div class="d-flex justify-content-between">
                               <h2 class="card-title">基礎 Basic</h2>
@@ -100,7 +99,7 @@ current: Reservation-1
                     </a>
                     </li>
                     <li class="swiper-slide bg-third" >
-                      <a href="#" class="card card-btn shadow bg-secondary text-white  w-100" id="chooseCourse-intermediate">
+                      <a href="#" class="card card-btn shadow bg-secondary text-white  w-100 chooseCourse-intermediate" id="chooseCourse-intermediate">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">中階 Intermediate</h2>
@@ -119,7 +118,7 @@ current: Reservation-1
                       </a>
                     </li>
                     <li class="swiper-slide bg-third">
-                      <a href="#" class="card card-btn shadow bg-secondary text-white  w-100"id="chooseCourse-advanced">
+                      <a href="#" class="card card-btn shadow bg-secondary text-white  w-100 chooseCourse-advanced"id="chooseCourse-advanced">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">高階 Advanced</h2>
@@ -145,14 +144,14 @@ current: Reservation-1
   </div>
 </div>
 <!--選擇課程-->
-<div class="container-lg chooseCourse hide">
+<div class="container showChooseCourse hide">
   <div class="row">
-    <div class="col-12 text-third"><h5 class="text-center">您選擇的是</h5></div>
+    <div class="col-12 text-third mt-10"><h5 class="text-center">您選擇的是</h5></div>
   <div class="col-12 text-third text-decoration-underline"><h4 class="text-center">首次體驗課程-<span class="courseLevel"></span> </h4></div>
   </div>
 </div>
 <!--預約須知-->
-<div class="container-lg mb-23 mb-md-22 mb-lg-25">
+<div class="container mb-23 mb-md-22 mb-lg-25">
     <div class="row justify-content-center mb-3 mb-md-0">
         <div class="col-4  d-flex justify-content-center col-lg-2 ">
             <h1 class="fs-2 text-third mt-18 mt-md-22">預約須知</h1>
