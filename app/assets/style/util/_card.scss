@@ -102,23 +102,28 @@
 //card img border-radius and height change  with Breakpoints <!--方案選擇-->
 .card-img-border-direction {
   height: 243px;
+  width: 100%;
   border-top-left-radius: calc(1rem - 1px);
   border-top-right-radius: calc(1rem - 1px);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 @include media-breakpoint-up(md) {
   .card-img-border-direction {
     height: 243px;
-    width: 50%;
+    min-width: 50%;
     border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     border-bottom-left-radius: calc(1rem - 1px);
   }
 }
 @include media-breakpoint-up(lg) {
   .card-img-border-direction {
     height: 243px;
-    width: auto;
+    width: 100%;
     border-top-right-radius: calc(1rem - 1px);
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 //course Description
