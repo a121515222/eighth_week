@@ -6,13 +6,13 @@ $(function () {
   //swiper index page
   const mySwiper = document.querySelector('.mySwiper');
   if (mySwiper) {
-  const  swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       slidesPerGroup: 1,
-  grid: {
-    rows: 2,    //slidesPerColumn: 2, swiper6寫法
-    fill: 'row',//slidesPerColumnFill: 'row',  swiper6寫法
-  },
+      grid: {
+        rows: 2,    //slidesPerColumn: 2, swiper6寫法
+        fill: 'row',//slidesPerColumnFill: 'row',  swiper6寫法
+      },
       loopFillGroupWithBlank: false,
       spaceBetween: 30,
       loop: false,
@@ -31,98 +31,127 @@ $(function () {
   //index connent
   const commentSwiper = document.querySelector('.commentSwiper');
   if (commentSwiper) {
-  const swiper = new Swiper(".commentSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    slidesPerGroup: 1,
-  grid: {
-    rows: 3, //slidesPerColumn: 3,  swiper6寫法
-    fill: 'row',//slidesPerColumnFill: 'column',  swiper6寫法
-  },
-    loop: false,
-    loopFillGroupWithBlank: false,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".fa-arrow-left",
-      prevEl: ".fa-arrow-right",
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-  grid: {
-    rows: 2, //slidesPerColumn: 2,  swiper6寫法
-    fill: 'row',//slidesPerColumnFill: 'row',  swiper6寫法
-  },
-        spaceBetween: 0,
+    const swiper = new Swiper(".commentSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      slidesPerGroup: 1,
+      grid: {
+        rows: 3, //slidesPerColumn: 3,  swiper6寫法
+        fill: 'row',//slidesPerColumnFill: 'column',  swiper6寫法
       },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 0,
+      loop: false,
+      loopFillGroupWithBlank: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
-    }
-  });
-}
-//reservation page
-const courseLevelSwiper = document.querySelector('.courseLevelSwiper');
+      navigation: {
+        nextEl: ".fa-arrow-left",
+        prevEl: ".fa-arrow-right",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          grid: {
+            rows: 2, //slidesPerColumn: 2,  swiper6寫法
+            fill: 'row',//slidesPerColumnFill: 'row',  swiper6寫法
+          },
+          spaceBetween: 0,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+      }
+    });
+  }
+  //reservation page
+  const courseLevelSwiper = document.querySelector('.courseLevelSwiper');
   if (courseLevelSwiper) {
-const swiper = new Swiper(".courseLevelSwiper", {
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  grid: {
-    rows: 3,// slidesPerColumn: 3,swiper6寫法
-    fill: 'row',// slidesPerColumnFill: 'row',swiper6寫法
-  },
-  loopFillGroupWithBlank: false,
-  spaceBetween: 30,
-  loop: false,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
+    const swiper = new Swiper(".courseLevelSwiper", {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      grid: {
+        rows: 3,// slidesPerColumn: 3,swiper6寫法
+        fill: 'row',// slidesPerColumnFill: 'row',swiper6寫法
+      },
+      loopFillGroupWithBlank: false,
       spaceBetween: 30,
-  grid: {
-    rows: 1,
-    fill: 'row',
-  },  
-    },
-    992: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
+      loop: false,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          grid: {
+            rows: 1,
+            fill: 'row',
+          },
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      }
+    });
   }
-});
-}
-//CourseDescription-teacher
-const swiperCourseDecription = document.querySelector('.swiperCourseDecription');
+
+  //CourseDescription-teacher
+  const swiperCourseDecription = document.querySelector('.swiperCourseDecription');
   if (swiperCourseDecription) {
-const swiper = new Swiper(".swiperCourseDecription", {
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  grid: {
-    rows: 4,
-    fill: 'row',
-  },
-  loopFillGroupWithBlank: false,
-  spaceBetween: 70,
-  loop: false,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-  grid: {
-    rows: 1,
-    fill: 'row',
-  },  
-    },
-    992: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
+    const swiper = new Swiper(".swiperCourseDecription", {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      grid: {
+        rows: 4,
+        fill: 'row',
+      },
+      loopFillGroupWithBlank: false,
+      spaceBetween: 70,
+      loop: false,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          grid: {
+            rows: 1,
+            fill: 'row',
+          },
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      }
+    });
   }
-});
-}
+  //recomedCourseSwiper
+  const recomedCourseSwiper = document.querySelector('.recomedCourseSwiper');
+  if (recomedCourseSwiper) {
+    const swiper = new Swiper(".recomedCourseSwiper", {
+      slidesPerView: 1.3,
+      slidesPerGroup: 1,
+      grid: {
+        rows: 1,
+        fill: 'row',
+      },
+      loopFillGroupWithBlank: false,
+      spaceBetween: 30,
+      loop: false,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          grid: {
+            rows: 1,
+            fill: 'row',
+          },
+        },
+        992: {
+          slidesPerView: 4,
+        },
+      }
+    });
+  }
+
 });
 
 
@@ -140,7 +169,7 @@ const datepicker = new Datepicker(elem, {
   nextArrow: '>',
   prevArrow: '<',
   buttonClass: 'btn primary',
-}); 
+});
 
 const show = document.querySelector('.chooseCourse');
 const basic = document.querySelector('#chooseCourse-base');

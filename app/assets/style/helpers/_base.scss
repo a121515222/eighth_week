@@ -14,26 +14,12 @@ img{
 body{
     font-family: Noto Sans TC, sans-serif;
 }
-
 a{
   text-decoration: none;
   display: block;
 }
-//待分類
-
 .hoversytle{
   &:hover,&:focus{
     opacity: 0.6;
-  }
-}
-//btn
-.bnt-rounded{
-  border-radius: 16px;
-}
-
-.hoversytle-btn{
-  &:hover,&:focus{
-    color: $white !important;
-    background: $secondary;
   }
 }

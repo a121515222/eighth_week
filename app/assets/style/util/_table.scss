@@ -1,0 +1,9 @@
+.td-background{
+    td{
+        background: $white;
+        &:nth-child(2n+1){
+            background: $primary;
+        }
+        
+    }
+}

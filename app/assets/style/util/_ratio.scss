@@ -8,3 +8,16 @@
         --bs-aspect-ratio: 61.3%;
     }
 }
+
+.ratio-course-modal{
+    --bs-aspect-ratio: 100%;
+    width: 165px;
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 158.33333%;
+        width: 264px;
+    }
+    @include media-breakpoint-up(lg){
+        --bs-aspect-ratio: 100%;
+        width: 418px;
+    }
+}

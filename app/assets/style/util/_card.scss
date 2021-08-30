@@ -185,3 +185,24 @@
     width: 96px;
   }
 }
+.img-border-radius{
+  border-radius: 16px;
+}
+
+//surround descript
+.text-location{
+  left:24px;
+  bottom:24px
+}
+.text-location2{
+  left:24px;
+  bottom:24px;
+  @include media-breakpoint-up(lg){
+    bottom:24px
+  }
+}
+
+//border-rasius
+.border-rounded{
+  border-radius: 16px;
+}

@@ -6,6 +6,7 @@ current: CourerDescription
 ---
 
 <!--demonstration of coures card-->
+<!--本月限定課程-->
 <div class="container mb-18 mb-md-12 mb-lg-9">
     <h2 class="text-fourth text-center my-10 my-md-14">課程介紹</h2>
     <div class="row">
@@ -13,7 +14,6 @@ current: CourerDescription
             <div class="ratio ratio-course">
                 <img src="./assets/images/courseDom.jpeg" alt="coursePicture">
             </div>
-
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <h2 class="tw-medium text-fourth mb-2">本月限定課程 - 空中瑜珈</h2>
@@ -26,10 +26,9 @@ current: CourerDescription
             </p>
             <a href="#" role="button" class="btn btn-secondary text-white fs-4">立即預約</a>
         </div>
-
-
     </div>
 </div>
+<!--各類課程介紹-->
 <div class="bg-secondary">
     <div class="container">
         <div class="d-flex py-9 gap-3">
@@ -56,13 +55,13 @@ current: CourerDescription
         <div class="col-lg-9">
             <ul class="row list-unstyled mt-10 mb-1 mb-md-4 ">
                 <li class=" col-12 mb-13 col-md-6 my-md-9  col2-lg-5">
-                    <div class="card demonstration-card position-relative">
+                    <a href="#basicID" class="card demonstration-card position-relative" id="basicID" data-bs-toggle="modal" data-bs-target="#basicModal">
                         <img src="./assets/images/class-1.jpg" alt="coures-picture">
                         <div class="position-absolute text-white bottom-24px start-24px">
                             <h2 class="fw-medium">基礎 Basic</h2>
                             <p class="mb-0">授課老師：Carol Tang</p>
                         </div>
-                    </div>
+                    </a>
                 </li>
                 <li class=" col-12 mb-13 col-md-6 my-md-9 col2-lg-4">
                     <div class="card demonstration-card position-relative">
@@ -142,7 +141,7 @@ current: CourerDescription
     </div>
 </div>
 <hr style="color: $third; height: 2px;">
-
+<!--師資介紹-->
 <div class="container">
     <h2 class="text-third text-center mt-13">師資介紹</h2>
     <div class="swiper swiperCourseDecription bg-white ">
@@ -217,3 +216,27 @@ current: CourerDescription
         </ul>
     </div>
 </div>
+
+<!--Moadal-->
+
+
+<div class="modal fade" id="basicModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+        <div class="modal-content bg-third text-white px-7 px-md-10 px-lg-21 py-14 py-md-22 d-flex flex-column align-items-md-center gap-7 flex-md-row gap-md-9 gap-lg-15">
+                <div class="ratio ratio-course-modal align-self-center ">
+                    <img src="./assets/images/courseDom.jpeg" alt="coursePicture">
+                </div>
+                <div class="from-group">
+                    <h2 class="tw-medium  mb-2">基礎 Basic</h2>
+                    <div class="d-flex gap-3 mb-8">
+                        <span class="">授課老師：Carol Tang</span>
+                        <span class="pill">60min</span>
+                    </div>
+                    <p class="">
+                        使用掛布懸掛在半空，進行哈達瑜珈體位法練習<br>藉由地心引力的重力原理<br>鍛鍊核心肌群，舒緩脊椎壓力<br>訓練身體協調性，深層放鬆身體<br>課堂裡老師會視同學狀況安排教導倒立動作<br>對於不敢嘗試倒立的同學來說<br>藉由掛布的支持與保護<br>加上老師細心指導，讓同學能更快掌握
+                    </p>
+                    <a href="#" role="button" class="btn btn-primary text-third fs-4">立即預約</a>
+                </div>
+        </div>
+    </div>
+  </div>

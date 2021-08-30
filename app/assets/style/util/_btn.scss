@@ -1,0 +1,6 @@
+.hoversytle-btn{
+    &:hover,&:focus{
+      color: $white !important;
+      background: $secondary;
+    }
+  }
