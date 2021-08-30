@@ -2549,7 +2549,7 @@ progress {
   .form-control::-webkit-date-and-time-value {
     height: 1.5em; }
   .form-control::placeholder {
-    color: #6c757d;
+    color: #C0A4A5;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
@@ -5480,7 +5480,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 16px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   outline: 0; }
 
@@ -5504,8 +5504,8 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding: 1rem 1rem;
   border-bottom: 1px solid #dee2e6;
-  border-top-left-radius: calc(0.3rem - 1px);
-  border-top-right-radius: calc(0.3rem - 1px); }
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
   .modal-header .btn-close {
     padding: 0.5rem 0.5rem;
     margin: -0.5rem -0.5rem -0.5rem auto; }
@@ -5527,8 +5527,8 @@ textarea.form-control-lg {
   justify-content: flex-end;
   padding: 0.75rem;
   border-top: 1px solid #dee2e6;
-  border-bottom-right-radius: calc(0.3rem - 1px);
-  border-bottom-left-radius: calc(0.3rem - 1px); }
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px; }
   .modal-footer > * {
     margin: 0.25rem; }
 

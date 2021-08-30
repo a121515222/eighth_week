@@ -137,6 +137,35 @@ $(function () {
         }
       }
     });
+  } //recomedCourseSwiper
+
+
+  var recomedCourseSwiper = document.querySelector('.recomedCourseSwiper');
+
+  if (recomedCourseSwiper) {
+    var _swiper4 = new Swiper(".recomedCourseSwiper", {
+      slidesPerView: 1.3,
+      slidesPerGroup: 1,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      },
+      loopFillGroupWithBlank: false,
+      spaceBetween: 30,
+      loop: false,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          grid: {
+            rows: 1,
+            fill: 'row'
+          }
+        },
+        992: {
+          slidesPerView: 4
+        }
+      }
+    });
   }
 }); //first-experience
 
