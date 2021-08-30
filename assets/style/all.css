@@ -26897,15 +26897,19 @@ a {
 
 .card-img-border-direction {
   height: 243px;
+  width: 100%;
   border-top-left-radius: calc(1rem - 1px);
   border-top-right-radius: calc(1rem - 1px);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 @media (min-width: 768px) {
   .card-img-border-direction {
     height: 243px;
-    width: 50%;
+    min-width: 50%;
     border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     border-bottom-left-radius: calc(1rem - 1px);
   }
 }
@@ -26913,9 +26917,10 @@ a {
 @media (min-width: 992px) {
   .card-img-border-direction {
     height: 243px;
-    width: auto;
+    width: 100%;
     border-top-right-radius: calc(1rem - 1px);
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
