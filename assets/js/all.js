@@ -8,6 +8,7 @@ $(function () {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       slidesPerGroup: 1,
+      spaceBetween: 30,
       grid: {
         rows: 2,
         //slidesPerColumn: 2, swiper6寫法
@@ -15,7 +16,6 @@ $(function () {
 
       },
       loopFillGroupWithBlank: false,
-      spaceBetween: 30,
       loop: false,
       breakpoints: {
         992: {
@@ -25,7 +25,8 @@ $(function () {
             //slidesPerColumn: 1, swiper6寫法
             fill: 'row' //slidesPerColumnFill: 'row',  swiper6寫法
 
-          }
+          },
+          spaceBetween: 30
         }
       }
     });
@@ -37,7 +38,7 @@ $(function () {
   if (commentSwiper) {
     var _swiper = new Swiper(".commentSwiper", {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 30,
       slidesPerGroup: 1,
       grid: {
         rows: 3,
@@ -64,11 +65,11 @@ $(function () {
             fill: 'row' //slidesPerColumnFill: 'row',  swiper6寫法
 
           },
-          spaceBetween: 0
+          spaceBetween: 30
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 0
+          spaceBetween: 30
         }
       }
     });

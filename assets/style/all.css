@@ -26720,6 +26720,12 @@ a {
   opacity: 0.6;
 }
 
+@media (min-width: 992px) {
+  .h-lg-100 {
+    min-height: 100%;
+  }
+}
+
 .primary {
   color: #907A7B;
 }
@@ -26741,8 +26747,8 @@ a {
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .swiper-slide {
@@ -26902,25 +26908,6 @@ a {
   }
   .relax-card {
     height: 207px;
-  }
-}
-
-.course {
-  width: 165px;
-  height: 165px;
-}
-
-@media (min-width: 768px) {
-  .course {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media (min-width: 992px) {
-  .course {
-    width: 455px;
-    height: 455px;
   }
 }
 
@@ -27093,6 +27080,16 @@ a {
   .ratio-course-modal {
     --bs-aspect-ratio: 100%;
     width: 418px;
+  }
+}
+
+.ratio-surround {
+  --bs-aspect-ratio: 100%;
+}
+
+@media (min-width: 768px) {
+  .ratio-surround {
+    --bs-aspect-ratio: 48%;
   }
 }
 
