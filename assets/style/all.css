@@ -26752,6 +26752,8 @@ a {
 }
 
 .swiper-slide {
+  width: auto;
+  height: auto;
   font-size: 18px;
   background: #F5F0E7;
   /* Center slide text vertically */
@@ -27056,7 +27058,7 @@ a {
   color: #fff;
 }
 
-.card-first-experience.active {
+.card-choosed.active {
   -webkit-box-shadow: 0px 0px 0 5px #C0A4A5 !important;
           box-shadow: 0px 0px 0 5px #C0A4A5 !important;
 }
@@ -27066,6 +27068,10 @@ a {
 }
 
 .card-long-experience.none {
+  display: none !important;
+}
+
+.card-first-experience.none {
   display: none !important;
 }
 

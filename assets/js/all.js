@@ -184,7 +184,8 @@ if (elem) {
     clearBtn: true // format: 'mm/dd/yyyy',
 
   });
-} //first-experience
+} //choosed-course
+//first-experience
 
 
 $('.first-experience').click(function (e) {
@@ -193,6 +194,24 @@ $('.first-experience').click(function (e) {
   if (document.body.clientWidth < 992) {
     $('.card-short-experience').toggleClass('none');
     $('.card-long-experience').toggleClass('none');
+  }
+}); //short-experience
+
+$('.short-experience').click(function (e) {
+  $('.card-short-experience').toggleClass('active');
+
+  if (document.body.clientWidth < 992) {
+    $('.card-first-experience').toggleClass('none');
+    $('.card-long-experience').toggleClass('none');
+  }
+}); //long-experience
+
+$('.long-experience').click(function (e) {
+  $('.card-long-experience').toggleClass('active');
+
+  if (document.body.clientWidth < 992) {
+    $('.card-short-experience').toggleClass('none');
+    $('.card-first-experience').toggleClass('none');
   }
 });
 var show = document.querySelector('.showChooseCourse');
