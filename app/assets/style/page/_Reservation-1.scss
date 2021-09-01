@@ -6,39 +6,6 @@
         width: 50%;
     }
 }
-
-//card check-cricle color
-.white-transparent{
-    color:rgba(255, 255, 255, 0.3);  
-}
-.card-btn{
-    &:hover,&:focus{
-        .white-transparent{
-            color: $white;
-        } 
-        box-shadow: inset 0px 0px 0 5px $white !important; 
-    }
-}
-
-//course-card toggleClass
-
-.card-first-experience.active{
-    box-shadow:  0px 0px 0 5px $secondary !important;
-    
-}
-.card-short-experience.none{
-    display: none !important;
-}
-.card-long-experience.none{
-    display: none !important;
-}
-
-//course chose overflow scroll
-.course-overflow{
-    flex-wrap: nowrap;
-    overflow-x:auto;
-    white-space: nowrap;
-}
 //hide block
 .hide{
     display: none;
