@@ -1,15 +1,17 @@
+//設定banner高度
 .background-set{
   background: url(../images/banner.jpeg);
   background-size: cover;
   background-position: top 60% right 65% ;
   background-repeat: no-repeat;
   height: 560px;
-}
-//設定banner高度
-@include media-breakpoint-up(md) {
-  .background-md-set{
-    height: 582px;
-    background-size: cover;
-    background-position: bottom 0 right 50% ;
+  @include media-breakpoint-up(md) {
+    
+      height: 582px;
+      background-size: cover;
+      background-position: bottom 0 right 50% ;
+    
   }
 }
+
+

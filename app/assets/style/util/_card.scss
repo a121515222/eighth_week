@@ -115,6 +115,7 @@
     height: 196px;
   }
   &:before {
+    text-shadow: 0 0 0 #fff;
     position: absolute;
     content: "60min";
     background: $secondary;
