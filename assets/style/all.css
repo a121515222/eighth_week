@@ -26761,6 +26761,45 @@ a {
   border-radius: 16px;
 }
 
+.primary {
+  color: #907A7B;
+}
+
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background-color: #907A7B;
+}
+
+.datepicker-picker {
+  color: #907A7B;
+}
+
+.datepicker-input-width {
+  width: 125px;
+  border: 1px solid #C0A4A5;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.ball-pulse > div {
+  background: #C0A4A5;
+}
+
+.loader-small .loader-inner {
+  -webkit-transform: scale(0.5, 0.5);
+      -ms-transform: scale(0.5, 0.5);
+          transform: scale(0.5, 0.5);
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  right: 48%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .input-style {
   border: 1px solid #C0A4A5;
   border-radius: 4px;
