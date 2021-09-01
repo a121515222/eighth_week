@@ -26726,6 +26726,10 @@ a {
   }
 }
 
+.text-shadow {
+  text-shadow: -2px -2px 0 #000;
+}
+
 .primary {
   color: #907A7B;
 }
@@ -26797,15 +26801,6 @@ a {
   -webkit-transform: scale(0.5, 0.5);
       -ms-transform: scale(0.5, 0.5);
           transform: scale(0.5, 0.5);
-}
-
-.loader {
-  position: fixed;
-  top: 50%;
-  right: 48%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .input-style {
@@ -26961,6 +26956,7 @@ a {
 }
 
 .demonstration-card:before {
+  text-shadow: 0 0 0 #fff;
   position: absolute;
   content: "60min";
   background: #C0A4A5;
@@ -27154,7 +27150,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .background-md-set {
+  .background-set {
     height: 582px;
     background-size: cover;
     background-position: bottom 0 right 50%;
