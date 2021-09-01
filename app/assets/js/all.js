@@ -5,21 +5,21 @@ $(function () {
     const swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       slidesPerGroup: 1,
+      spaceBetween: 30,
       grid: {
         rows: 2,    //slidesPerColumn: 2, swiper6寫法
         fill: 'row',//slidesPerColumnFill: 'row',  swiper6寫法
       },
       loopFillGroupWithBlank: false,
-      spaceBetween: 30,
       loop: false,
       breakpoints: {
-
         992: {
           slidesPerView: 1.3,
           grid: {
             rows: 1,    //slidesPerColumn: 1, swiper6寫法
             fill: 'row',//slidesPerColumnFill: 'row',  swiper6寫法
           },
+          spaceBetween: 30,
         },
       }
     });
@@ -29,7 +29,7 @@ $(function () {
   if (commentSwiper) {
     const swiper = new Swiper(".commentSwiper", {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 30,
       slidesPerGroup: 1,
       grid: {
         rows: 3, //slidesPerColumn: 3,  swiper6寫法
@@ -52,11 +52,11 @@ $(function () {
             rows: 2, //slidesPerColumn: 2,  swiper6寫法
             fill: 'row',//slidesPerColumnFill: 'row',  swiper6寫法
           },
-          spaceBetween: 0,
+          spaceBetween: 30,
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 0,
+          spaceBetween: 30,
         },
       }
     });
@@ -149,6 +149,26 @@ $(function () {
   }  
 });
 
+//loader-when finshed load remove the icon
+$(window).on("load", function() {
+  $(".loader").remove();
+});
+
+
+//vanillajs-datepicker
+const elem = document.querySelector('input[name="datepicker"]');
+if(elem){
+  const datepicker = new Datepicker(elem, {
+    nextArrow: '>',
+    prevArrow: '<',
+    buttonClass: 'btn datepicker-primary',
+    autohide: true,
+    clearBtn: true,
+    // format: 'mm/dd/yyyy',
+    }); 
+}
+
+
 //first-experience
 $('.first-experience').click(function (e) {
   $('.card-first-experience').toggleClass('active');
@@ -166,6 +186,7 @@ const courseLevel = document.querySelector('.courseLevel');
 
 
 //remove the hide class
+if(show){
 function present(e) {
   e.preventDefault()
   show.classList.remove('hide')
@@ -180,21 +201,17 @@ function wintermediate() {
 function wadvanced() {
   courseLevel.innerHTML = "進階"
 }
+if(basic){
+  function wbasic() {
+    courseLevel.innerHTML = "基礎"
+  }
+}
 basic.addEventListener('click', present, false)
 basic.addEventListener('click', wbasic, false)
 intermediate.addEventListener('click', present, false)
 intermediate.addEventListener('click', wintermediate, false)
 advanced.addEventListener('click', present, false)
 advanced.addEventListener('click', wadvanced, false)
+}
 
 
-//vanillajs-datepicker
-const elem = document.querySelector('input[name="datepicker"]');
-const datepicker = new Datepicker(elem, {
-nextArrow: '>',
-prevArrow: '<',
-buttonClass: 'btn datepicker-primary',
-autohide: true,
-clearBtn: true,
-// format: 'mm/dd/yyyy',
-}); 

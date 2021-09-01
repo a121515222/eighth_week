@@ -23,3 +23,8 @@ a{
     opacity: 0.6;
   }
 }
+.h-lg-100{
+  @include media-breakpoint-up(lg){
+    min-height: 100%;
+  }
+}

@@ -70,25 +70,6 @@
     height: 207px;
   }
 }
-
-//course card height <!--精心設計、課程多元-->
-.course {
-  width: 165px;
-  height: 165px;
-}
-@include media-breakpoint-up(md) {
-  .course {
-    width: 150px;
-    height: 150px;
-  }
-}
-@include media-breakpoint-up(lg) {
-  .course {
-    width: 455px;
-    height: 455px;
-  }
-}
-
 //comment card gap with Breakpoints   <!--聽聽他們怎麼說-->
 .card-commen-gap {
   margin: 4px 15px;

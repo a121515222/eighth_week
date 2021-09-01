@@ -21,3 +21,12 @@
         width: 418px;
     }
 }
+
+.ratio-surround{
+    --bs-aspect-ratio: 100%;
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 48%;
+    }
+   
+
+}
