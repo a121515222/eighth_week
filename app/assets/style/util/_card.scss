@@ -208,7 +208,7 @@
 
 //course-card toggleClass
 
-.card-first-experience.active{
+.card-choosed.active{
   box-shadow:  0px 0px 0 5px $secondary !important;
   
 }
@@ -216,5 +216,8 @@
   display: none !important;
 }
 .card-long-experience.none{
+  display: none !important;
+}
+.card-first-experience.none{
   display: none !important;
 }

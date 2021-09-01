@@ -169,12 +169,29 @@ if(elem){
 }
 
 
+//choosed-course
 //first-experience
 $('.first-experience').click(function (e) {
   $('.card-first-experience').toggleClass('active');
   if (document.body.clientWidth < 992) {
     $('.card-short-experience').toggleClass('none');
     $('.card-long-experience').toggleClass('none');
+  }
+});
+//short-experience
+$('.short-experience').click(function (e) {
+  $('.card-short-experience').toggleClass('active');
+  if (document.body.clientWidth < 992) {
+    $('.card-first-experience').toggleClass('none');
+    $('.card-long-experience').toggleClass('none');
+  }
+});
+//long-experience
+$('.long-experience').click(function (e) {
+  $('.card-long-experience').toggleClass('active');
+  if (document.body.clientWidth < 992) {
+    $('.card-short-experience').toggleClass('none');
+    $('.card-first-experience').toggleClass('none');
   }
 });
 const show = document.querySelector('.showChooseCourse');
