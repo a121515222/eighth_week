@@ -26720,6 +26720,14 @@ a {
   opacity: 0.6;
 }
 
+.hover-display {
+  opacity: 0.0;
+}
+
+.hover-display:hover {
+  opacity: 1;
+}
+
 @media (min-width: 992px) {
   .h-lg-100 {
     min-height: 100%;
