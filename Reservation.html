@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Reservation
+  </title>
+  <!--Animate On Scroll-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!--loaders-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css">
+  <!--font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!--bootstrap-icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!--bootstrap-->
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <!--vanillajs-datepocker-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css">
+  <!--all.css-->
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <!--字體-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+<body >
+ <!--loader-->
+  <div class="loader ball-pulse position-fixed top-50 start-50">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="container-fluid bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-light  ">
+      <a class="navbar-brand" href="./index.html"><img src="./assets/images/DOYOGA-logo.png" alt="DOYOGA-logo"
+          style="height: 30px;"></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-align-justify fs-1"></i>
+      </button>
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0  mx-lg-auto align-items-end ">
+          <li class="nav-item ">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./CourseDescription.html">
+              課程介紹
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./surround.html">
+              瑜珈空間
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./courseTime.html">
+              當月課表
+            </a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a class="fw-light nav-link fs-5 active" aria-current="page" href="./Reservation.html">
+              立刻預約
+            </a>
+          </li>
+          <li class="nav-item d-lg-none ">
+            <a class="fw-light nav-link fs-5 active"  aria-current="page" href="./ContactUS.html">
+              聯絡我們
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex gap-7 d-none d-lg-block">
+        <a class="btn btn-primary border rounded-pill  text-fourth hoversytle-btn-secondary" href="./Reservation.html"
+        role="button">立即預約</a>
+      <a class="btn btn-primary border rounded-pill  text-fourth hoversytle-btn-secondary" href="./ContactUS.html" role="button">聯絡我們</a>
+      </div>
+  </nav>
+</div>
+  <!--Fixed right side social media linker-->
+  <ul class="position-fixed top-50 end-0 d-none d-lg-block list-unstyled d-lg-flex flex-column gap-3"
+    style="z-index: 9999;">
+    <li><a href="#"><i class="fab fa-facebook  text-third hoversytle" style="font-size: 48px;"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram text-third hoversytle" style="font-size: 48px;"></i></a></li>
+    <li><a href="#"><i class="fab fa-line  text-third hoversytle" style="font-size: 48px;"></i></a></li>
+  </ul>
+  <div class="container">
+    <div class="row justify-content-center mb-3 mb-md-0" data-aos="fade-up">
+        <div class="col-4  d-flex justify-content-center col-lg-2 ">
+            <h1 class="fs-2 text-third mt-18 mb-10 mt-md-22 mb-7">立即預約</h1>
+        </div>
+    </div>
+
+    <ul class="nav nav-pills mx-auto mb-3 row" id="pills-tab" role="tablist">
+        <li class="nav-item col-4 offset-md-3 col-md-2" role="presentation">
+            <a href="#"
+                class=" btn btn-primary border-rounded text-third hoversytle-btn-secondary px-9 px-md-5 px-lg-18"
+                id="pills-chooseProject-tab" data-bs-toggle="pill" data-bs-target="#pills-chooseProject" type="button" role="tab"
+                aria-controls="pills-chooseProject" aria-selected="true">選擇方案</a>
+        </li>
+        <li class=" nav-item col-4 col-md-2" role="presentation">
+                <a href="#"
+                    class=" btn btn-primary border-rounded text-third hoversytle-btn-secondary px-9 px-md-5 px-lg-18"
+                    id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+                    role="tab" aria-controls="pills-profile" aria-selected="false">填寫資料</a>
+
+        </li>
+        <li class="nav-item col-4 col-md-2" role="presentation">
+            <a href="#"
+            class=" btn btn-primary border-rounded text-third hoversytle-btn-secondary px-9 px-md-5 px-lg-18"
+            id="pills-reserved-tab" data-bs-toggle="pill" data-bs-target="#pills-reserved"
+                type="button" role="tab" aria-controls="pills-reserved" aria-selected="false">完成預約</a>
+            
+        </li>
+    </ul>
+</div>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-chooseProject" role="tabpanel" aria-labelledby="pills-chooseProject-tab">
+        <!--方案選擇-->
+        <div class="container">
+            <ul class="row list-unstyled my-7 ">
+              <li class="col-12 mb-7 mb-md-10 mb-lg-0 col-lg-4"data-aos="fade-up" data-aos-duration="300">
+                <div class="card d-flex flex-column flex-md-row flex-lg-column card-first-experience card-choosed">
+                  <img src="./assets/images/class-4-2.jpg" class="card-img-border-direction" alt="picture">
+                <div class="card-body">
+                  <h4 class="card-title text-third">首次體驗</h4>
+                  <span class="fs-4 text-secondary">NT $450 / 次</span>
+                  <p class="card-text text-third">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                  <a href="#chooseCourse" class="btn btn-secondary text-white hoversytle-btn-primary fs-4 w-100 first-experience" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="chooseCourse">選擇課程</a>
+                </div>
+              </div>
+            </li>
+              <li class="col-12 mb-7 mb-md-10 mb-lg-0 col-lg-4"data-aos="fade-up" data-aos-duration="600">
+                <div class="card d-flex flex-column flex-md-row flex-lg-column card-short-experience card-choosed">
+                  <img src="./assets/images/woman performing yoga.jpg" class="card-img-border-direction" alt="picture">
+                  <div class="card-body">
+                    <h4 class="card-title text-third">短期體驗</h4>
+                    <span class="fs-4 text-secondary">NT $1800 / 月</span>
+                    <p class="card-text text-third">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                    <a href="#" class="btn btn-secondary text-white hoversytle-btn-primary fs-4 w-100 short-experience">選擇課程</a>
+                  </div>
+                </div>
+              </li>
+              <li class="col-12 mb-7 mb-md-10 mb-lg-0 col-lg-4"data-aos="fade-up" data-aos-duration="900">
+                <div class="card d-flex flex-column flex-md-row flex-lg-column card-long-experience card-choosed">
+                  <img src="./assets/images/woman in blue leggings and black tank top doing yoga.jpg" class="card-img-border-direction" alt="picture">
+                  <div class="card-body">
+                    <h4 class="card-title text-third">長期體驗</h4>
+                    <span class="fs-4 text-secondary">NT $5600 / 季</span>
+                    <p class="card-text text-third">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
+                    <a href="#" class="btn btn-secondary text-white hoversytle-btn-primary fs-4 w-100 long-experience">選擇課程</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        <div class="collapse" id="chooseCourse">
+          <div class="container">
+            <div class="row mb-7">
+              <div class="col-12 d-flex justify-content-center align-items-center offset-lg-1 col-lg-2">
+                <i class="fs-1 text-center text-third fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          
+              <div class="container bg-third">
+                  <div class="row justify-content-center mb-3 mb-md-0 pb-22">
+                      <div class="col-5  d-flex justify-content-center col-lg-3">
+                          <h1 class="fs-2 text-white mt-18 mb-10 mt-md-22 mb-md-14">選擇課程階級</h1>
+                      </div>
+                      <!--課程難度選擇swiper-->
+                        <div class="swiper courseLevelSwiper ">
+                          <ul class="swiper-wrapper list-unstyled bg-third" >
+                            <li class="swiper-slide bg-third" >
+                              <a href="#"class="card card-btn shadow bg-secondary text-white w-100 h-100 chooseCourse-base"   id="chooseCourse-base">
+                              <div class="card-body">
+                                  <div class="d-flex justify-content-between">
+                                      <h2 class="card-title">基礎 Basic</h2>
+                                      <i class="fs-1 white-transparent far fa-check-circle"></i>
+                                  </div>
+                                  <div class="d-flex align-items-center gap-3">
+                                    <p class="card-text mb-0">基礎課程</p>
+                                    <span class="fw-light bage rounded-pill bg-third px-7 py-1">60 min</span>
+                                  </div>
+                                  <ul class="my-9 ">
+                                      <li class="card-text mb-2 text-left">入體位法動作解說</li>
+                                      <li class="card-text mb-2 text-left">瑜珈基礎動作、順位</li>
+                                      <li class="card-text mb-2 text-left">適合任何階段練習者</li>
+                                  </ul>
+                              </div>
+                            </a>
+                            </li>
+                            <li class="swiper-slide bg-third" >
+                              <a href="#" class="card card-btn shadow bg-secondary text-white  w-100 h-100  chooseCourse-intermediate" id="chooseCourse-intermediate">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h2 class="card-title">中階 Intermediate</h2>
+                                        <i class="fs-1 white-transparent far fa-check-circle"></i>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3">
+                                      <p class="card-text mb-0">艾揚格、哈達、寰宇</p>
+                                      <span class="fw-light bage rounded-pill bg-third px-7 py-1">60 min</span>
+                                    </div>
+                                    <ul class="my-9">
+                                        <li class="card-text mb-2">刺激身體七個層次為核心</li>
+                                        <li class="card-text mb-2">結合流暢體位法練習、呼吸、觀想</li>
+                                        <li class="card-text mb-2">適合半年以上練習者</li>
+                                    </ul>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="swiper-slide bg-third">
+                              <a href="#" class="card card-btn shadow bg-secondary text-white  w-100 h-100 chooseCourse-advanced"id="chooseCourse-advanced">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h2 class="card-title">高階 Advanced</h2>
+                                        <i class="fs-1 white-transparent far fa-check-circle"></i>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3">
+                                      <p class="card-text mb-0">阿斯坦加、陰陽</p>
+                                      <span class="fw-light bage rounded-pill bg-third px-7 py-1">60 min</span>
+                                    </div>
+                                    <ul class="my-9">
+                                        <li class="card-text mb-2">充分打開身體每個部位</li>
+                                        <li class="card-text mb-2">顯著提升力量與柔軟度</li>
+                                        <li class="card-text mb-2">適合一年以上練習者</li>
+                                    </ul>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      
+                  </div>
+              </div>
+          
+        </div>
+        <!--選擇課程-->
+        <div class="container showChooseCourse hide">
+          <div class="row">
+            <div class="col-12 text-third mt-10"><h5 class="text-center">您選擇的是</h5></div>
+          <div class="col-12 text-third text-decoration-underline"><h4 class="text-center">首次體驗課程-<span class="courseLevel"></span> </h4></div>
+          </div>
+        </div>
+        <!--預約須知-->
+        <div class="container mb-23 mb-md-22 mb-lg-25">
+            <div class="row justify-content-center mb-3 mb-md-0">
+                <div class="col-4  d-flex justify-content-center col-lg-2 ">
+                    <h1 class="fs-2 text-third mt-18 mt-md-22">預約須知</h1>
+                </div>
+            </div>
+            <ul class=" mx-auto text-third list-unstyled reservation-note-width my-7">
+                <li class="mb-2">1. 如果有特殊體質、特殊狀況，請主動告知。</li>
+                <li class="mb-2">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
+                <li class="mb-2">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
+                <li class="">4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 d-flex justify-content-center"data-aos="fade-up">
+                    <span class="text-third me-7">您選擇的是</span>
+                    <h4 class="text-secondary">首次體驗課程-基礎</h4>
+                </div>
+            </div>
+            <div class="row">
+                <form action="#" method="POST">
+                <ul class=" col-12 mb-25 list-unstyled text-third mb-md-24 offset-md-3 col-md-6 mb-lg-27 offset-lg-4 col-lg-4">
+                    <li class="my-7"data-aos="fade-up">
+                        <p >1. 是否接觸過瑜珈?</p>
+                        <div class="d-flex gap-14">
+                            <div class="d-flex align-items-center">
+                                <input type="radio" id="yesID" name="yoga_experience" value="是" checked>
+                                <label  for="yesID">是</label>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <input type="radio" id="noID" name="yoga_experience" value="否" >
+                                <label class="form-label" for="noID">否</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="my-7"data-aos="fade-up">
+                        <p >2. 想改善的生活問題?</p>
+                            <div class="row">
+                                <div class="col-12 d-flex gap-5">
+                                    <div class="d-flex align-items-center ">
+                                        <input type="checkbox" id="powerlessID" name="life_problem" value="肌耐力不足">
+                                        <label  for="powerlessID">肌耐力不足</label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="flexlessID" name="life_problem" value="柔軟度不佳" >
+                                        <label  for="flexlessID">柔軟度不佳</label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="stressID" name="life_problem" value="壓力大" >
+                                        <label  for="stressID">壓力大</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="d-flex align-items-center me-11">
+                                        <input  type="checkbox" id="badPostitonID" name="life_problem" value="姿勢不正">
+                                        <label  for="badPostitonID">姿勢不正</label>
+                                    </div>
+                                    <div class="d-flex align-items-center me-5">
+                                        <input  type="checkbox" id="poorSleepID" name="life_problem" value="睡眠品質差" >
+                                        <label  for="poorSleepID">睡眠品質差</label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="lessAttentionID" name="life_problem" value="注意力不足" >
+                                        <label  for="lessAttentionID">注意力不足</label>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="my-7"data-aos="fade-up">
+                        <p >3. 每週累積運動量約為多少？</p>
+                            <div class="row">
+                                <div class="col-12 d-flex gap-5">
+                                    <div class="d-flex align-items-center ">
+                                        <input type="radio" id="150mimUpID" name="sportTimePerWeek" value="150 分鐘以上" checked>
+                                        <label  for="150mimUpID">150 分鐘以上</label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="75-150minID" name="sportTimePerWeek" value="75~150 分鐘" >
+                                        <label  for="75-150minID">75~150 分鐘</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="d-flex align-items-center me-11">
+                                        <input type="radio" id="30-75minID" name="sportTimePerWeek" value="30~75 分鐘">
+                                        <label  for="30-75minID">30~75 分鐘</label>
+                                    </div>
+                                    <div class="d-flex align-items-center me-5">
+                                        <input  type="radio" id="less30minID" name="sportTimePerWeek" value="30 分鐘以下" >
+                                        <label  for="less30minID">30 分鐘以下</label>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="my-7"data-aos="fade-up">
+                        <p class=" mb-2">4. 上課預約報到日</p>
+                        <p class="fs-6 text-third mb-2">若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！</p>
+                        <input class="mt-3 mb-7 form-control datepicker-input-width " type="text" placeholder="MM/DD/YYYY" name="datepicker">
+                    </li>
+                    <li class="my-7"data-aos="fade-up">
+                        <p class="">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+                        <div class="d-flex gap-3 mb-7">
+                            <div class="d-flex flex-column">
+                                <label class="form-label mb-3" for="name">姓名</label>
+                                <input class="form-control " class="input-style w-100" type="text" id="name" placeholder="請輸入您的姓名">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label class="form-labell mb-3" for="age">年齡</label>
+                                <input class="form-control" class="input-style w-100" type="number" id="age" placeholder="請輸入您的年齡">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mb-7"><label class="mb-3" for="gender">性別</label>
+                            <select class="input-style gender-selection-width" name="gender" id="genderId">
+                            <option value="female">女</option>
+                            <option value="male">男</option>
+                        </select>
+                        </div>
+                        <div class="d-flex flex-column mb-7">
+                            <lable class="form-label mb-3" for="mail">電子信箱</lable>
+                            <input class="form-control" type="email" placeholder="email@example.com" id="mail" class="input-style w-100">
+                        </div>
+                        <div class="d-flex flex-column ">
+                            <lable class="form-label mb-3" for="tel">手機號碼</lable>
+                            <input class="form-control" type="tel" placeholder="0912-345-678" id="tel" class="input-style w-100">
+                        </div>
+                    </li>
+                    <button type="submit" class="btn btn-secondary text-white w-100 py-3 fs-4 hoversytle-btn-primary"data-aos="fade-up">送出</button>
+                </ul>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="pills-reserved" role="tabpanel" aria-labelledby="pills-reserved-tab">
+        <div class="container">
+            <div class="row text-third justify-content-center my-14 mt-md-10 my-lg-14  ">
+                <i class="mt-2 far fa-check-circle fa-3x text-center"></i>
+                <div class="mt-9 col-12 col-md-6 col-lg-4">
+                    <p class="fs-4 text-center">已完成預約，以下是您的預約資訊:</p>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item"data-aos="fade-up">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button text-white bg-third arrow" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    預約資訊
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <ul class="accordion-body text-third list-unstyled mb-0">
+                                    <div class="d-flex align-items-center gap-3 mb-7">
+                                        <span>您預約的是</span><span class="fs-4 text-secondary">首次體驗課程-基礎</span>
+                                    </div>
+                                    <li class="mb-3"><span>上課預約報到日：2021/07/21</span></li>
+                                    <li class="mb-3"><span>預約人：Joanne Chen</span></li>
+                                    <li class="mb-3"><span>年齡：18 歲</span></li>
+                                    <li class="mb-3"><span>性別：女</span></li>
+                                    <li class="mb-3"><span>電子信箱：example123@gmail.com</span></li>
+                                    <li><span>手機號碼：0912-345-678</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="text-secondary text-center mt-10 mb-3"data-aos="fade-up">上課注意事項</h4>
+                <div class="col-12 col-md-6 col-lg-4 mb-7">
+                    <p class="fs-5 text-secondary "data-aos="fade-up">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-10">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="./index.html" class="btn btn-secondary text-white fs-4 w-100 hoversytle-btn-primary" role="button"data-aos="fade-up">返回首頁</a>
+                </div>
+            </div>
+                
+            
+        </div>
+    </div>
+</div>
+    <!--footer-->
+    <div class="bg-third">
+      <div class="container-fluid">
+        <div class="row py-15">
+          <!--subscript-->
+          <div class="col-12 col-lg-5 ">
+            <h2 class="text-white">現在訂閱，獲得課程優惠碼！</h2>
+          </div>
+          <div class="col-12 col-md-6 offset-lg-3 col-lg-4 ">
+            <div class="input-group">
+              <input class="form-control" type="emali" placeholder="請輸入您的電子信箱" aria-label="subscript-mail" aria-describedby="submit-btn">
+              <button class="btn btn-secondary fs-4 text-white hoversytle-btn-primary" id="submit-btn" type="submit">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-white mt-0" >
+      <div class="container ">
+        <!--Social network linker-->
+        <div class="row">
+          <div class="col-12 mb-3">
+            <div class="d-flex justify-content-between">
+              <a href=""><img src="./assets/images/DOYOGA.png" alt="DOYOGA-logo" style="height: 30px;"></a>
+              <ul class="d-flex align-items-center list-unstyled gap-3 ">
+                <li><a href="#"><i class="fab fa-facebook fs-3"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fs-3"></i></a></li>
+                <li><a href="#"><i class="fab fa-line fs-3"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--other info linker-->
+          <div class="col-12 mb-3 ">
+            <h5 class="text-white fw-light"><a href="#">課程介紹</a></h5>
+          </div>
+          <div class="col-12 mb-3 col-lg-12">
+            <h5 class="text-white fw-light"><a href="#">瑜珈空間</a></h5>
+          </div>
+          <div class="col-12 mb-3 col-md-2 col-lg-1">
+            <h5 class="text-white fw-light"><a href="#">當月課表</a></h5>
+          </div>
+          <div class="col-12 mb-3 offset-md-2 col-md-4 offset-lg-3 col-lg-4">
+            <div class="d-flex justify-content-md-center">
+              <h5 class="text-white fw-light">© 2021. All Rights Reserved.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--JS-->
+    <!--Animate On Scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });</script>
+    <!--loaders-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.min.js"></script>
+    <!--Swiper-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--vanillajs-datepocker-->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker.min.js"></script>
+    <!--vandors-->
+    <script src="./assets/js/vendors.js"></script>
+    <!--all.js-->
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
